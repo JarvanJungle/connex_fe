@@ -1,0 +1,198 @@
+/* React Datepicker Overrides */
+
+// variable
+$primary: #aec57d !default;
+$secondary: #868e96 !default;
+$light-purple: #f9fafc !default;
+$light-pink: #f88686 !default;
+$primary-100: #e9efdb !default;
+$primary-400: #bdcf94 !default;
+$primary-500: #aec57d !default;
+$primary-600: #98b55a !default;
+$red-100: #fee6e6 !default;
+$red-400: #faa6a6 !default;
+$red-500: #f88686 !default;
+$red-600: #f66666 !default;
+$dark-100: #e6e9ed !default;
+$dark-300: #b5bec9 !default;
+$dark-400: #98a4b3 !default;
+$dark-500: #8493a5 !default;
+$dark-600: #68798e !default;
+
+.react-datepicker-popper {
+    width: 60%;
+}
+
+// Card
+.react-datepicker {
+    border: solid 1px $gray-400 !important;
+    font-family: inherit !important;
+    box-shadow: $box-shadow;
+    width: 100%;
+}
+
+.react-datepicker__header {
+    background-color: $gray-200 !important;
+    border-bottom: solid 0px $gray-400 !important;
+}
+
+// Card Header
+.react-datepicker__navigation {
+    top: 10px !important;
+}
+
+.react-datepicker__navigation--next {
+    border-left-color: $gray-500 !important;
+}
+
+.react-datepicker__navigation--next:hover {
+    border-left-color: $gray-600 !important;
+}
+
+.react-datepicker__navigation--previous {
+    border-right-color: $gray-500 !important;
+}
+
+.react-datepicker__navigation--previous:hover {
+    border-right-color: $gray-600 !important;
+}
+
+// Month Header
+.react-datepicker__current-month {
+    color: $black !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+
+.react-datepicker__day-name {
+    color: $body-color !important;
+}
+
+// Active Day
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--selected {
+    color: $white !important;
+    background-color: $primary-600 !important;
+    border-radius: unset !important;
+}
+
+// Hover Day
+.react-datepicker__day:hover {
+    background-color: $primary !important;
+    color: $white !important;
+    border-radius: unset !important;
+    background-color: $primary-100 !important;
+}
+
+// Day In Range
+.react-datepicker__month--selecting-range .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range) {
+    background-color: lighten($primary, 15%) !important;
+    color: $white !important;
+}
+
+.react-datepicker__day--in-range {
+    background-color: lighten($primary, 24%) !important;
+    color: $white !important;
+}
+
+// Day in Selecting Range
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range) {
+    background-color: $primary !important;
+    color: $white !important;
+}
+
+// Triangle Top
+[data-placement^="bottom"] .react-datepicker__triangle {
+    border-bottom-color: $gray-200 !important;
+}
+
+[data-placement^="bottom"] .react-datepicker__triangle::before {
+    border-bottom-color: $gray-400 !important;
+}
+
+// Triangle Bottom
+[data-placement^="top"] .react-datepicker__triangle {
+    border-top-color: $gray-400 !important;
+}
+
+[data-placement^="top"] .react-datepicker__triangle::before {
+    border-top-color: $gray-400 !important;
+}
+
+.react-datepicker__month-container {
+    width: 100% !important;
+}
+
+.react-datepicker__day {
+    width: 14% !important;
+    margin: unset !important;
+}
+
+.react-datepicker__day-names {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .react-datepicker__day-name {
+        width: 14% !important;
+        margin: unset !important;
+    }
+}
+
+.react-datepicker__input-time-container {
+    clear: unset !important;
+    width: 100%;
+    float: unset !important;
+    margin: 5px 0 10px 15px;
+    text-align: unset !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .react-datepicker-time__caption {
+        flex: 1;
+    }
+
+    .react-datepicker-time__input-container {
+        flex: 8;
+    }
+
+    .react-datepicker-time__input {
+        margin-left: unset !important;
+        padding-left: 10px;
+        width: calc(100% - 30px);
+
+        input {
+            display: block;
+            width: 100% !important;
+            height: calc(1.6em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #5d636d;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        input:focus {
+            outline: unset !important;
+            box-shadow: 0 0 0 0.2rem $primary-100 !important;
+            border: 1px solid $primary-600 !important;
+        }
+    }
+}
+
+.icon-date {
+    display: block;
+    background: url("https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-128.png") no-repeat;
+    background-size: 10%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translateX(-2%);
+}

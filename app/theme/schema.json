@@ -1,0 +1,47 @@
+{
+    "data" : {
+      "light" : {
+        "id": "T_001",
+        "name": "Light",
+        "colors": {
+            "primary-100": "#E9EFDB",
+            "primary-400": "#BDCF94",
+            "primary-500": "#AEC57D",
+            "primary-600": "#98B55A",
+            "red-100": "#FEE6E6",
+            "red-400": "#FAA6A6",
+            "red-500": "#F88686",
+            "red-600": "#F66666",
+            "dark-100": "#E6E9ED",
+            "dark-300": "#B5BEC9",
+            "dark-400": "#98A4B3",
+            "dark-500": "#8493A5",
+            "dark-600": "#68798E",
+            "white": "#FFFFFF",
+            "primary": "#AEC57D",
+            "warning": "#F27212",
+            "warning-100": "#FFFBED",
+            "warning-400": "#FFE287",
+            "warning-500": "#FFDA65",
+            "warning-600": "#FFD243",
+            "secondary": "#868E96",
+            "danger": "#ED1C24",
+            "success": "1BB934",
+            "info": "33AE9A",
+            "body": "#F9FAFC",
+            "text": "#000000",
+            "button": {
+            "text": "#FFFFFF"
+            },
+            "link": {
+              "text": "teal",
+              "opacity": 1
+            }
+        },
+        "size": {
+          "value4": 4
+        },
+        "font": "Tinos"
+      }
+    }
+  }

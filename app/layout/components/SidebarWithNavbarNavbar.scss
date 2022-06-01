@@ -1,0 +1,17 @@
+.navbar-breadcrumb {
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    list-style:none;
+}
+
+.navbar-container {
+    width: 100%;
+    padding: 5px 0;
+    margin: 0 20px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

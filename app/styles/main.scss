@@ -1,0 +1,39 @@
+@import "../theme/variables.scss"; // override the color
+
+// main scss
+@import '~@owczar/dashboard-style--airframe/scss/style';
+
+// custom for some components
+@import '../routes/components/Sidebar/SidebarTopA.scss';
+@import '../theme/card-doxa.scss';
+
+// stickyFooter
+@import '../components/StickyFooter/stickyfooter.scss';
+
+// table button on top
+@import './table-button-top.scss';
+
+/* Partials */
+@import './partials/global';
+/* End Partials */
+
+@import '~primeicons/primeicons.css';
+@import '~primereact/resources/themes/saga-blue/theme.css';
+@import '~primereact/resources/primereact.css';
+@import '~primeflex/primeflex.css';
+@import '~primereact/resources/primereact.min.css';
+
+// custom sweetalert2
+@import './sweetalert2.scss';
+
+@import '../components/MultiSelect/MultiSelect.scss';
+
+@import '../routes/EntityAdmin/ManageFeaturesMatrix/FeaturesMatrix.scss';
+
+// react-datepicker
+@import 'styles/plugins/_react-datepicker.scss';
+
+@import './customs.scss';
+
+// placeholder-loading
+@import 'styles/plugins/_placeholder-loading.scss';

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: connex-portal-deployment
+  name: connex-portal-deployment
+spec:
+  replicas: {replicas}
+  selector:
+    matchLabels:
+      app: connex-portal-deployment
+  template:
+    metadata:
+      labels:
+        app: connex-portal-deployment
+    spec:
+      containers:
+        - image: {container_image}
+          name: connex-portal-pod
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
+          env:      
+            - name: NODE_ENV
+              value: development

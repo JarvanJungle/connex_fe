@@ -1,0 +1,138 @@
+@import "~ag-grid-community/dist/styles/ag-grid.scss";
+@import "~ag-grid-community/dist/styles/ag-theme-alpine/sass/ag-theme-alpine.scss";
+
+// can add more icon here
+$icons: filter;
+$icon-path: "../../images/table/solid/";
+$ag-grid-border-color: #d2d8de;
+
+@mixin icon-background($path, $icon, $size) {
+  background: url('#{$path}#{$icon}.svg') no-repeat;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $size $size;
+  height: $size;
+  width: $size;
+}
+
+.ag-theme-custom-react {
+  @include ag-theme-alpine((odd-row-background-color: #F6F7F8,
+      row-border-color: $ag-grid-border-color,
+      row-hover-color: #e6e9ed,
+      range-selection-border-color: transparent,
+      range-selection-background-color: #03305633,
+      // header-height: 80px,
+      header-background-color: #e6e9ed,
+      font-size: 12px,
+      foreground-color:#68798e,
+      data-color: black));
+
+  .ag-overlay-no-rows-center {
+    font-size: 12px,
+  }
+
+  .ag-menu-option-active {
+    background-color: #2661ad;
+    color: white;
+  }
+
+  .ag-root-wrapper {
+    border-radius: 5px;
+    border-color: $ag-grid-border-color;
+    box-shadow: 0px 2px 7px $ag-grid-border-color;
+    overflow: visible;
+  }
+
+  .ag-icon-last {
+    display: none;
+  }
+
+  .ag-icon-first {
+    display: none;
+  }
+
+  .ag-header-cell-label {
+    font-weight: 550;
+  }
+
+  .ag-header-viewport {
+    border: 2px;
+  }
+
+  .ag-checkbox-input-wrapper.ag-checked::after {
+    color: #AEC57D !important
+  }
+
+  .checkbox-style::after {
+    color: #AEC57D !important
+  }
+
+  .ag-header-cell-label .ag-header-icon.ag-sort-order {
+    display: none
+  }
+
+  @each $icon in $icons {
+    .ag-icon.ag-icon-#{$icon} {
+      @include icon-background($icon-path, $icon, 16px);
+
+      &:before {
+        content: '' !important;
+      }
+    }
+  }
+
+  // .ag-icon-pin {
+  //     /* FontAwesome uses font-weight bold */
+  //     font-weight: bold;
+  //  }
+
+  // .ag-icon-filter::before {
+  //     font-family: "Font Awesome 5 Free";
+  //     content: '\f08d';
+  //  }
+
+  .ag-paging-panel {
+    height: 4em;
+  }
+
+  .ag-overlay {
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    top: 89px;
+    height: calc(100% - 89px);
+
+    .ag-overlay-wrapper {
+      color: #8493A5;
+      font-size: 16px;
+      font-weight: 400;
+      background-color: rgba(#8493A5, 0.08);
+      padding-bottom: 10px;
+    }
+  }
+
+  .ag-rich-select-list {
+    max-height: 220px;
+  }
+  .ag-header-cell-text {
+    font-size: 12px;
+  }
+  .ag-cell-value {
+    font-size: 12px;
+  }
+}
+
+.padding-bottom {
+  .ag-body-viewport {
+    padding-bottom: 20px;
+  }
+}
+
+.custom-no-rows-to-show {
+  .ag-overlay-wrapper {
+      padding-bottom: 0 !important;
+      padding-top: 25px !important;
+    }
+}

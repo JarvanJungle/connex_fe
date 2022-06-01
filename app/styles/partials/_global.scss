@@ -1,0 +1,19 @@
+/* FROM COMPONENTS EFFECT ON GLOBAL */
+
+/* Custom SCSS Global for PrimeReact */
+@import './custom-primereact';
+
+/* Doxa SCSS */
+@import "./core-doxa";
+
+/* Common Confirm Dialog */
+@import '../../routes/components/CommonConfirmDialog/CommonConfirmDialog.scss';
+
+/* Advanced Conversations Component */
+@import '../../routes/PreRequisitions/components/AdvancedConversationsComponent/AdvancedConversationsComponent.module.scss';
+
+/* Custom AgGrid */
+@import './custom-ag-grid';
+
+/* Custom styles */
+@import './custom';

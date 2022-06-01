@@ -1,0 +1,37 @@
+@import "./color-variables";
+
+.p-calendar.p-component.p-inputwrapper {
+    width: 100%;
+}
+
+.custom-calendar-panel {
+    .p-datepicker-calendar {
+        tr {
+            height: unset;
+            padding: unset;
+        }
+        td {
+            padding: unset;
+        }
+
+        span.p-highlight {
+            background-color: $primary;
+            color: $white;
+            font-weight: 600;
+        }
+    }
+}
+
+.p-inputswitch .p-inputswitch-slider {
+    background: $primary;
+}
+.p-inputswitch .p-inputswitch-slider:hover{
+    background: $primary!important;
+}
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background: #A9A2C1;
+}
+
+.p-inputswitch.p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
+    background: #A9A2C1!important;
+}

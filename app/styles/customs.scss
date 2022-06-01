@@ -1,0 +1,24 @@
+.btn-ag-grid-angle-right {
+    position: absolute !important;
+    color: #8493A5;
+    left: -29px;
+    top: 8px;
+}
+.ag-cell-wrapper.ag-row-group-leaf-indent {
+    position: relative;
+}
+
+.ag-cell-expandable.ag-row-group {
+    .btn-ag-grid-angle-right {
+        display: none;
+    }
+}
+
+.button-group-change-module {
+    position: absolute !important;
+    top: 0px;
+    left: 10px;
+    button {
+        min-width: auto !important;
+    }
+}

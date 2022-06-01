@@ -1,0 +1,18 @@
+.editable-cell {
+    background-color:#D3EFEE;
+    border: 1px solid #A1DDDB!important;
+    &-odd {
+        background-color:#BAE6E5;
+        border: 1px solid #A1DDDB!important;
+    }
+}
+
+.summary-section {
+    tr {
+        height: 24px;
+        td {
+            width: 20%;
+        }
+    }
+
+}

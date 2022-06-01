@@ -1,0 +1,19 @@
+.activeButton {
+    color: red;
+    cursor: pointer;
+}
+
+.activeButton > i {
+    font-size: 15px;
+    color: red;
+}
+
+.deactiveButton {
+    color: navy;
+    cursor: pointer;
+}
+
+.deactiveButton > i {
+    font-size: 15px;
+    color: navy;
+}

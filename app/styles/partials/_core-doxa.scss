@@ -1,0 +1,151 @@
+@import "./color-variables";
+.doxa {
+    &-row {
+        padding: 5px;
+    }
+
+    &-row-float-right {
+        text-align: right !important;
+        float: right;
+        padding: inherit;
+    }
+
+    &-row-float-left {
+        text-align: left !important;
+        float: left;
+        padding: inherit;
+    }
+
+    &-justify-inline-flex {
+        justify-content: space-between;
+        display: inline-flex;
+        width: 100%;
+    }
+
+    &-input {
+        width: 100%;
+    }
+
+    &-p-dropdown {
+        width: 100%;
+        .p-dropdown-label.p-placeholder {
+            font-size: 0.9em;
+            padding: 8px;
+        }
+    }
+
+    &-p-radiobutton {
+        margin-right: 0.5em;
+        .p-radiobutton-box.p-highlight {
+            border-color: #10a8a3 !important;
+            background: #6fcbc8 !important;
+        }
+    }
+
+    &-label {
+        margin: unset;
+    }
+
+    &-button {
+        &-default {
+            color: $white;
+            background-color: unset;
+            background-color: $primary !important;
+            border-color: $primary !important;
+            margin-left: 0.6em;
+            margin-right: 0.6em;
+            font-size: 0.9em;
+            .p-button {
+                color: $white;
+                background-color: unset;
+                background-color: $primary !important;
+                border-color: $primary !important;
+                margin-left: 0.6em;
+                margin-right: 0.6em;
+                font-size: 0.9em;
+            }
+        }
+
+        &-default:hover {
+            color: $white;
+            background-color: $dark-primary !important;
+            border-color: $dark-primary !important;
+        }
+
+        &-close {
+            color: $primary !important;
+            background-color: unset;
+            border: 1px solid $primary !important;
+            margin-left: 0.6em;
+            margin-right: 0.6em;
+            font-size: 0.9em;
+        }
+
+        &-close:hover {
+            color: $white !important;
+            background-color: $dark-primary !important;
+            border-color: $dark-primary !important;
+        }
+
+        &-draft {
+            color: $white !important;
+            background-color: $draft !important;
+            border: 1px solid $white !important;
+            margin-left: 0.6em;
+            margin-right: 0.6em;
+            font-size: 0.9em;
+        }
+
+        &-draft:hover {
+            color: $draft !important;
+            background-color: $white !important;
+            border: 1px solid $draft !important;
+        }
+
+        &-back {
+            color: $white !important;
+            background-color: $cyan-900 !important;
+            border: 1px solid $white !important;
+            margin-left: 0.6em;
+            margin-right: 0.6em;
+            font-size: 0.9em;
+        }
+
+        &-back:hover {
+            color: $cyan-900 !important;
+            background-color: $white !important;
+            border: 1px solid $cyan-900 !important;
+        }
+
+        &-warning {
+            color: $white !important;
+            background-color: $yellow-600 !important;
+            border: 1px solid $white !important;
+            margin-left: 0.6em;
+            margin-right: 0.6em;
+            font-size: 0.9em;
+        }
+
+        &-warning:hover {
+            color: $yellow-600 !important;
+            background-color: $white !important;
+            border: 1px solid $yellow-600 !important;
+        }
+
+        &-danger {
+            color: $white !important;
+            background-color: $red-500 !important;
+            border: 1px solid $white !important;
+            margin-left: 0.6em;
+            margin-right: 0.6em;
+            font-size: 0.9em;
+        }
+
+        &-danger:hover {
+            color: $red-500 !important;
+            background-color: $white !important;
+            border: 1px solid $red-500 !important;
+        }
+
+    }
+}

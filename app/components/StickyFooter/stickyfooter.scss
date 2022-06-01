@@ -1,0 +1,40 @@
+.custom-footer {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: solid 0.2px #80808038;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1000;
+}
+
+.custom-footer > div {
+  display: table;
+  text-align: center;
+  margin-left: 290px;
+  width: calc(100% - 290px);
+  padding-top: 0.55rem;
+  height: 100%;
+}
+
+.layout__sidebar--slim + .layout__wrap {
+  .custom-footer {
+    div {
+      margin-left: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .layout__wrap {
+    .custom-footer {
+      div {
+        margin-left: 50px;
+      }
+    }
+  }
+}

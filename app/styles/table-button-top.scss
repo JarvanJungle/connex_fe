@@ -1,0 +1,13 @@
+@media only screen and (max-width: 506px) {
+    .group-ag-grid-table-buttons {
+        display: flex;
+        margin-bottom: 0.5rem !important;
+        flex-direction: column;
+    } 
+
+    .group-ag-grid-buttons {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+}

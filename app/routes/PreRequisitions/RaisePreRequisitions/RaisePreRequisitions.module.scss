@@ -1,0 +1,13 @@
+@import "../components/PreRequisitionComponents.module.scss";
+
+.doxa {
+    &-card {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    &-section {
+        margin-top: 1.4em;
+        margin-bottom: 1.4em;
+    }
+}

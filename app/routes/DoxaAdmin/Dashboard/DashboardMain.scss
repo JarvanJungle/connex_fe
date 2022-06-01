@@ -1,0 +1,25 @@
+$gray-icon-text: #788696;
+
+
+.icon-inside-circle {
+    background-color: #F9FAFC;
+    color: $gray-icon-text;
+    fill:red;
+    border-radius: 50%;
+    width: 1em !important;
+}
+
+.information {
+    color: $gray-icon-text; 
+}
+
+.action {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 0.5rem;
+    color: $gray-icon-text; 
+}
+
+.link-item {
+    cursor: pointer;
+}

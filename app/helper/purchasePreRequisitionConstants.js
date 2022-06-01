@@ -1,0 +1,107 @@
+/* PPR STATUS */
+const PPR_STATUS = {
+    RAISING_PPR: "RAISING_PPR",
+    PENDING_APPROVAL: "PENDING_APPROVAL",
+    PENDING_SUBMISSION: "SAVED_AS_DRAFT",
+    CANCELLED: "CANCELLED",
+    RECALLED: "RECALLED",
+    APPROVED: "SUBMITTED_TO_PURCHASER_FOR_REVIEW",
+    REJECTED: "REJECTED",
+    SENT_BACK: "SENT_BACK",
+    CONVERTED_TO_PR: "CONVERTED_TO_PR",
+    PENDING_CONVERSION_TO_PO: "PENDING_CONVERSION_TO_PO",
+    PARTIALLY_CONVERTED_TO_PO: "PARTIALLY_CONVERTED_TO_PO",
+    CONVERTED_TO_PO: "CONVERTED_TO_PO"
+};
+const PPR_FE_STATUS = {
+    RAISING_PPR: "RAISING_PPR",
+    PENDING_APPROVAL: "PENDING APPROVAL",
+    SAVED_AS_DRAFT: "PENDING SUBMISSION",
+    CANCELLED: "CANCELLED",
+    RECALLED: "RECALLED",
+    APPROVED: "PENDING PURCHASER REVIEW",
+    REJECTED: "REJECTED",
+    SENT_BACK: "SENT BACK",
+    CONVERTED_TO_PR: "CONVERTED TO PR",
+    PENDING_CONVERSION_TO_PO: "PENDING CONVERT TO PO",
+    PARTIALLY_CONVERTED_TO_PO: "PARTIALLY CONVERTED TO PO",
+    CONVERTED_TO_PO: "CONVERTED TO PO"
+};
+
+/* PPR SUBMIT STATUS */
+const PPR_SUBMIT_STATUS = {
+    CREATE: "PENDING_APPROVAL",
+    DRAFT: "SAVED_AS_DRAFT",
+    EDIT: "EDIT",
+    CANCELLED: "CANCELLED",
+    SEND_BACK: "SEND_BACK",
+    REJECT: "REJECT",
+    APPROVE: "APPROVE"
+
+};
+
+const PPR_ROLES = {
+    PPR_APPROVER: "PPR_APPROVER",
+    PPR_CREATOR: "PPR_CREATOR",
+    PURCHASER: "PURCHASER",
+    NONE_ROLE: "NONE_ROLE"
+};
+
+const PPR_AUDIT_TRAIL_ROLE = {
+    SAVED_AS_DRAFT: "SAVED_AS_DRAFT",
+    SUBMITTED: "SUBMITTED",
+    RECALL: "RECALLED",
+    CANCEL: "CANCELLED",
+    SEND_BACK: "SENT_BACK",
+    REJECT: "REJECTED",
+    APPROVED: "APPROVED",
+    EDIT: "EDIT"
+};
+
+const PPR_AUDIT_TRAIL_ROLE_CONVERT = {
+    SAVED_AS_DRAFT: "Saved Purchase Pre-Requisition As Draft",
+    SUBMITTED: "Submitted Purchase Pre-Requisition",
+    RECALL: "Recalled Purchase Pre-Requisition",
+    CANCEL: "Cancelled Purchase Pre-Requisition",
+    SEND_BACK: "Sent Back Purchase Pre-Requisition",
+    REJECT: "Rejected Purchase Pre-Requisition",
+    APPROVED: "Approved Purchase Pre-Requisition",
+    EDIT: "Edit Purchase Pre-Requisition"
+};
+Object.freeze(PPR_STATUS);
+Object.freeze(PPR_SUBMIT_STATUS);
+Object.freeze(PPR_ROLES);
+Object.freeze(PPR_AUDIT_TRAIL_ROLE);
+Object.freeze(PPR_AUDIT_TRAIL_ROLE_CONVERT);
+
+const DWR_AUDIT_TRAIL_ROLE = {
+    SAVED_AS_DRAFT: "SAVED_AS_DRAFT",
+    SUBMITTED: "SUBMITTED",
+    RECALL: "RECALLED",
+    CANCEL: "CANCELLED",
+    SEND_BACK: "SENT_BACK",
+    REJECT: "REJECTED",
+    APPROVED: "APPROVED",
+    EDIT: "EDIT"
+};
+
+const DWR_AUDIT_TRAIL_ROLE_CONVERT = {
+    SAVED_AS_DRAFT: "Saved Developer Work Requisition As Draft",
+    SUBMITTED: "Submitted Developer Work Requisition",
+    RECALL: "Recalled Developer Work Requisition",
+    CANCEL: "Cancelled Developer Work Requisition",
+    SEND_BACK: "Sent Back Developer Work Requisition",
+    REJECT: "Rejected Developer Work Requisition",
+    APPROVED: "Approved Developer Work Requisition",
+    EDIT: "Edit Developer Work Requisition"
+};
+
+Object.freeze(DWR_AUDIT_TRAIL_ROLE);
+Object.freeze(DWR_AUDIT_TRAIL_ROLE_CONVERT);
+
+export {
+    PPR_STATUS, PPR_SUBMIT_STATUS, PPR_ROLES, PPR_FE_STATUS,
+    PPR_AUDIT_TRAIL_ROLE_CONVERT, PPR_AUDIT_TRAIL_ROLE,
+    DWR_AUDIT_TRAIL_ROLE,
+    DWR_AUDIT_TRAIL_ROLE_CONVERT
+};

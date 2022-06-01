@@ -1,0 +1,61 @@
+.fixed {
+  table-layout: fixed;
+}
+
+.sep {
+  background: #f8f8f8;
+}
+
+.addborder {
+  border: 1px solid #d3d3d3;
+  font-size: 15px;
+}
+
+.fixed td {
+  overflow: hidden;
+}
+
+.fixed tr {
+  height: 40px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.top {
+  vertical-align: top;
+}
+
+.line {
+  padding: 0 20px;
+  width: 200px;
+  position: relative;
+}
+
+.line::after {
+  content: "";
+  width: 216px;
+  height: 1px;
+  background-color: #d3d3d3;
+  position: absolute;
+  left: -8px;
+  bottom: 50%;
+  transform: rotate(22deg);
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.padding {
+  padding: 0 10px;
+}
+
+.padding input {
+  margin-right: 10px;
+}

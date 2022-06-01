@@ -1,0 +1,83 @@
+/* BASIC COMMON CONFIRM DIALOG STYLES */
+@import "../../../styles/partials/color-variables";
+
+.doxa {
+    &-modal {
+        &-outline {
+            &--primary {
+                .modal-content {
+                    border-color: $primary;
+                }
+            }
+            &--danger {
+                .modal-content {
+                    border-color: $light-pink;
+                }
+            }
+        }
+    }
+}
+
+.text {
+    &-default {
+        background-color: white !important;
+        border: unset;
+    }
+    &-default:hover,
+    &-default:active,
+    &-default:focus {
+        background-color: $dark-grey !important;
+    }
+
+    &-primary {
+        color: $primary !important;
+    }
+
+    &-primary:hover,
+    &-primary:active,
+    &-primary:focus {
+        color: white;
+        border: 1px solid $primary;
+    }
+
+    &-doxa-danger {
+        color: $light-pink;
+        background-color: white;
+    }
+}
+
+.common-confirm-dialog.btn {
+    &-primary:hover,
+    &-primary:active,
+    &-primary:focus {
+        color: white;
+        background-color: $dark-grey !important;
+        border: 1px solid $primary;
+    }
+
+    &-doxa-danger {
+        color: white;
+        background-color: $light-pink;
+        border: 1px solid $light-pink;
+    }
+
+    &-doxa-danger:hover,
+    &-doxa-danger:active,
+    &-doxa-danger:focus {
+        color: white;
+        background-color: $dark-grey !important;
+        border: 1px solid $light-pink;
+    }
+}
+
+.title-required {
+    div:first-child::after {
+        content: " *";
+        color: red;
+    }
+}
+.doxa-text-primary.true.modal-title.h4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

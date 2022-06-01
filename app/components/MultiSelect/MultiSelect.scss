@@ -1,0 +1,26 @@
+@import "../../styles/partials/color-variables";
+
+.no-border {
+    border: 0 none;
+}
+
+.selected-items {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.selected-items li {
+    padding: 8px !important;
+}
+
+.selected-items .btn {
+    padding: 0 6px;
+}
+
+.close-button {
+    color: $red-500
+}
+
+input[type="checkbox"] {
+    color: $primary;
+}

@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: connex-portal
+spec:
+  selector:
+    app: connex-portal-deployment
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80

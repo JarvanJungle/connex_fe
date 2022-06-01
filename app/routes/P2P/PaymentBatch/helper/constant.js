@@ -1,0 +1,44 @@
+const PAYMENT_BATCH_CONSTANTS = {
+    CASH: "CASH",
+    CHEQUE: "CHEQUE",
+    INTEGRATED_BANK_TRANSFER: "INTEGRATED BANK TRANSFER",
+    BANK_INTEGRATION: "BANK_INTEGRATION",
+    MANUAL_BANK_TRANSFER: "MANUAL BANK TRANSFER",
+    MANUAL: "MANUAL",
+    OTHERS: "OTHERS",
+    UNPAID: "UNPAID"
+};
+
+const PAYMENT_METHODS = {
+    MANUAL: [
+        {
+            name: PAYMENT_BATCH_CONSTANTS.CASH,
+            value: PAYMENT_BATCH_CONSTANTS.CASH
+        },
+        {
+            name: PAYMENT_BATCH_CONSTANTS.CHEQUE,
+            value: PAYMENT_BATCH_CONSTANTS.CHEQUE
+        },
+        {
+            name: PAYMENT_BATCH_CONSTANTS.MANUAL_BANK_TRANSFER,
+            value: PAYMENT_BATCH_CONSTANTS.MANUAL
+        },
+        {
+            name: PAYMENT_BATCH_CONSTANTS.OTHERS,
+            value: PAYMENT_BATCH_CONSTANTS.OTHERS
+        }
+    ],
+    H2H: [
+        {
+            name: PAYMENT_BATCH_CONSTANTS.INTEGRATED_BANK_TRANSFER,
+            value: PAYMENT_BATCH_CONSTANTS.BANK_INTEGRATION
+        }
+    ]
+};
+Object.freeze(PAYMENT_BATCH_CONSTANTS);
+Object.freeze(PAYMENT_METHODS);
+
+export {
+    PAYMENT_BATCH_CONSTANTS,
+    PAYMENT_METHODS
+};

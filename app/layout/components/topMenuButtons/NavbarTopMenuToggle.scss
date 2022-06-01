@@ -1,0 +1,31 @@
+.toggle-menu {
+    display: flex;
+    width: 170px;
+    align-items: center;
+    .p-inputswitch {
+        background: black !important;
+        .p-inputswitch-slider {
+            background: black !important;
+        }
+    }
+}
+
+.text-buyer { 
+    color: #adb7c3;
+    margin-top: 15px;
+    margin-right: 8px;
+    &.active {
+        color: #8493A5;
+        font-weight: bolder;
+    }
+}
+
+.text-supplier {
+    color: #adb7c3;
+    margin-top: 15px;
+    margin-left: 8px;
+    &.active {
+        color: #8493A5;
+        font-weight: bolder;
+    }
+}

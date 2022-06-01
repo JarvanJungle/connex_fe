@@ -1,0 +1,21 @@
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: doxa-portal-ingress
+  annotations:
+    app.kubernetes.io/name: ingress-nginx
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+spec:
+  rules:
+  - host: connex-dev.doxa-holdings.com
+    http:
+      paths:
+      - backend:
+          serviceName: connex-portal
+          servicePort: 80
+  tls:
+  - hosts:
+    - connex-dev.doxa-holdings.com
+    secretName: doxa-holdings

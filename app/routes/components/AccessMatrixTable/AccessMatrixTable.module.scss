@@ -1,0 +1,21 @@
+.fixed {
+  table-layout: fixed;
+}
+
+.sep {
+  background: #f8f8f8;
+}
+
+.addborder {
+  border: 1px solid #d3d3d3;
+  font-size: 15px;
+}
+
+.fixed td {
+  overflow: hidden;
+  width: 20px;
+}
+
+.fixed tr {
+  height: 40px;
+}
